@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event.preventDefault</title>
+</head>
+<body>
+    Try to check this box: <input type="checkbox" id="myCheckbox">
+
+    <p>Toggling a checkbox is the default action of clicking on a checkbox. The preventDefault() method prevents this from happening.</p>
+
+    <script>
+        document.getElementById("myCheckbox").addEventListener("click", function(event){
+            event.preventDefault()
+        });
+    </script>
+
+</body>
+</html>
